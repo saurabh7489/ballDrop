@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+}
+.background{
+    height: 100vh;
+    width: 100vw;
+    background-color: skyblue;
+    
+   
+}
+.sun{
+    height: 10vh;
+    width: 10vh;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+.ground{
+    height: 50vh;
+    width: 100vw;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50% 50% 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bat{
+height: 30vh;
+width: 5vw;
+background-color: antiquewhite;
+border-radius: 0px 0px 25% 25%;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative; 
+}
+.handle{
+    height: 11vh;
+    width: 1vw;
+    background-color: rgb(234, 177, 7);
+    position: absolute;
+    bottom: 100%;
+}
+.ball{
+    height: 5vh;
+    width: 2.5vw;
+    background-color: rgb(203, 5, 5);
+    border-radius: 50%;
+    position: absolute;
+    animation: ballBounce 1s ease-in  infinite alternate ;
+}
+
+@keyframes ballBounce {
+    from{
+        top:-150px;
+    }
+    to{
+        top: 15vh;
+    }
+}
